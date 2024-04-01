@@ -1,0 +1,239 @@
+/* bootstrap import */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* scroll start */
+:root {
+  --scrollbar-width: 10px;
+  --scrollbar-track-color: #f7e6ff;
+  --scrollbar-thumb-color: #695CFE;
+}
+
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: 10px; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4B3CA7;
+}
+/* scroll end */
+
+::selection{
+  background-color: #fe675c;
+  color: #fff;
+}
+body{
+  background-color: #f7e6ff;
+  color: #da89ff;
+}
+.animated-image {
+  animation: fadeInRight 1s ease;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.footer {
+  animation: slideInUp 0.5s ease;
+}
+.footer p{
+  color: #b0058b;
+}
+
+@keyframes slideInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; 
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+.nav-link:hover {
+  background-color: #ee349a; 
+}
+
+.animated-image {
+  transition: transform 0.5s ease-in-out;
+}
+
+.animated-image:hover {
+  transform: translateY(-5px); 
+}
+
+.animated-image:active {
+  transform: translateY(5px); 
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card .card-title {
+  color: #333333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.service-card .card-text {
+  color: #666666;
+  font-size: 16px;
+}
+
+.service-card.shadow {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  height: 280px;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member .card-img-top {
+  border-radius: 50%; 
+  object-fit: cover;
+  height: 150px;
+  width: 150px; 
+}
+
+.team-member .card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.team-member .card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.team-member .card-text {
+  font-size: 14px;
+}
+
+
+
+
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+
+/* navbar */
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.navbar-brand {
+  transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+}
+.animated-item {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.navbar-brand:hover {
+  background-color: #695CFE;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  animation: scaleUp 0.3s ease forwards; 
+}
+
+@keyframes scaleUp {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.1);
+  }
+}
+
+
+.join-btn {
+  background-color: #b0058b;
+  border-color: #fe675c;
+  transition: transform 0.3s ease-in-out;
+}
+
+.join-btn:hover {
+  transform: scale(1.05);
+}
